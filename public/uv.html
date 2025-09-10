@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proxy Portal</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <h2>Proxy Portal</h2>
+  <input id="url" placeholder="Enter URL to visit" style="width:300px"/>
+  <button onclick="go()">Go</button>
+  <iframe id="frame" style="width:90vw;height:70vh;border:1px solid #ccc;margin-top:1em"></iframe>
+  <script>
+    function go() {
+      var url = document.getElementById('url').value;
+      if (!/^https?:\/\//.test(url)) url = 'http://' + url;
+      document.getElementById('frame').src = url;
+    }
+  </script>
+</body>
+</html>
