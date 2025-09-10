@@ -1,0 +1,12 @@
+{
+  "name": "myportal",
+  "version": "1.0.0",
+  "description": "A stealthy web utility portal for school use.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
